@@ -1,8 +1,43 @@
 <html>
-  <head>
-    <title>Express handlebars</title>
-  </head>
-  <body>
-    {{{body}}}
-  </body>
+	<head>
+		<title>Express handlebars</title>
+		<style>
+			.bar, .cloud { fill:steelblue; }
+			.hover, .selected { fill:red !important; }
+			.info { font-color:green; overflow-wrap: break-word; }
+
+			.divTable{
+				display: table;
+				width: 100%;
+			}
+			.divTableRow {
+				display: table-row;
+			}
+			.divTableHeading {
+				background-color: #EEE;
+				display: table-header-group;
+			}
+			.divTableCell, .divTableHead {
+				border: 1px solid #999999;
+				display: table-cell;
+				padding: 3px 10px;
+			}
+			.divTableHeading {
+				background-color: #EEE;
+				display: table-header-group;
+				font-weight: bold;
+			}
+			.divTableFoot {
+				background-color: #EEE;
+				display: table-footer-group;
+				font-weight: bold;
+			}
+			.divTableBody {
+				display: table-row-group;
+			}
+		</style>
+	</head>
+	<body>
+		{{{body}}}
+	</body>
 </html>
